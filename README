@@ -2,13 +2,13 @@ This is a programmer for PIC microcontrollers I built a while ago.
 
 parallel_port_programmer: This is the first programmer I built.
 It uses a 3rd party library called DlPortIo that allows user space programmers to 
-effectively use IN/OUT instructions.  It bit bangs data over the parallel port.  
-It is difficult to get microsecond accurate timing, so I ended up using fairly 
+execute IN/OUT instructions.  It bit bangs data over the parallel port.
+It is difficult to get microsecond accurate timing, so I ended up using fairly
 large granularity delays.  As a result, it was really slow.
 
-serial_port_programmer: This uses a PIC to drive the actual programming lines,
+serial_port_programmer: This uses a PIC to drive the programming lines,
 so a programmer is required to bootstrap it.  The programmer PIC communicates
 with the host computer using a serial port.  I prototyped the first version
 on a piece of perf board with point-to-point connections.  The schematic
-is captured in serial-programmer.sch.  I also design a version that would use
+is captured in serial-programmer.sch. I also design a version that would use
 a USB-to-serial converter and was bus powered, but never built it.
