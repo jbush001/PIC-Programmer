@@ -1,8 +1,8 @@
 This is a programmer for PIC microcontrollers I built a while ago.
 
 parallel_port_programmer: This is the first programmer I built.
-It uses a 3rd party library called DlPortIo that allows user space programmers to 
-execute IN/OUT instructions.  It bit bangs data over the parallel port.
+It uses a 3rd party library called DlPortIo that allows user space programmers 
+to execute IN/OUT instructions.  It bit bangs data over the parallel port.
 It is difficult to get microsecond accurate timing, so I ended up using fairly
 large granularity delays.  As a result, it was really slow.
 
